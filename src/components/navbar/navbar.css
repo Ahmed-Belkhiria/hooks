@@ -1,0 +1,67 @@
+.navbarContainer {
+  width: 100vw;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: black;
+}
+.navbarWrapper {
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLeftImg {
+  height: 25px;
+  margin-right: 40px;
+}
+
+.navbarLeftOptions {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.navbarIcon {
+  margin: 0px 15px;
+  cursor: pointer;
+  color: white;
+}
+.navbarRightImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.navbarRightOptions {
+  display: none;
+  border-radius: 5px;
+}
+
+.navbarRightOptions {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown:hover ~ .navbarRightOptions {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: lightgrey;
+  color: black;
+}
